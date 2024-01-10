@@ -40,7 +40,11 @@
 // //we can also add "oninput="setGradient()" on the <input> tag in html
 // //to call the function. e.g. <input oninput="setGradient()">
 // //sec11lec109 15:00
-
+//function randomGradient(){ //same as setGradient() but we are using the random hex generator -- randomColor()
+// 	body.style.background = 
+// 	"linear-gradient(to right, "+ '#' + randomColor()+ ", "+ '#' + randomColor()+ ")";
+// 	css.textContent = body.style.background + ";"; 
+// }
 
 
 
@@ -66,15 +70,7 @@ function setGradient(){
 	css.textContent = body.style.background + ";"; 
 }
 
-function randomGradient(){ //same as setGradient() but we are using the random hex generator -- randomColor()
-	body.style.background = 
-	"linear-gradient(to right, "
-		+ '#' + randomColor()
-		+ ", "
-		+ '#' + randomColor()
-		+ ")";
-	css.textContent = body.style.background + ";"; 
-}
+
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
