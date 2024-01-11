@@ -66,16 +66,16 @@ function setGradient(){
 	css.textContent = body.style.background + ";"; 
 }
 
-function randomGradient(){ //same as setGradient() but we are using the random hex generator -- randomColor()
-	body.style.background = 
-	"linear-gradient(to right, "
-		+ '#' + randomColor()
-		+ ", "
-		+ '#' + randomColor()
-		+ ")";
-	css.textContent = body.style.background + ";"; 
-}
+// function randomGradient(){ //same as setGradient() but we are using the random hex generator -- randomColor()
+// 	body.style.background = 
+// 	"linear-gradient(to right, "
+// 		+ '#' + randomColor()
+// 		+ ", "
+// 		+ '#' + randomColor()
+// 		+ ")";
+// 	css.textContent = body.style.background + ";"; 
+// }
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
-random.addEventListener("click", randomGradient);
+// random.addEventListener("click", randomGradient);
