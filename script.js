@@ -45,7 +45,14 @@
 
 
 // //ORRRRRR
+// import {without} from 'lodash'
+// console.log(without);
+// var _= require('lodash')
 
+var _ = require('lodash');
+
+var array =[1,2,3,4,5,6,7,8,9,10];
+console.log('answer:' ,_.without(array,3))
 var css = document.querySelector("h3"); //selecting h3 which will display the code for the colors
 var color1 = document.querySelector(".color1"); //".color1" since you are selecting class="color1"
 var color2 = document.querySelector(".color2"); //samedt
